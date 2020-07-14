@@ -21,7 +21,7 @@ var _createClass = (function() {
   }
 })()
 
-var _visTimelineGraph2d = require('vis-timeline/peer/esm/vis-timeline-graph2d')
+var _visTimelineGraph2d = require('vis-timeline/dist/vis-timeline-graph2d.esm')
 
 var _visTimelineGraph2d2 = _interopRequireDefault(_visTimelineGraph2d)
 

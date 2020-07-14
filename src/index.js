@@ -1,4 +1,4 @@
-import vis from 'vis-timeline/peer/esm/vis-timeline-graph2d'
+import vis from 'vis-timeline/dist/vis-timeline-graph2d.esm'
 import 'vis-timeline/styles/vis-timeline-graph2d.min.css'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
