@@ -21,11 +21,11 @@ var _createClass = (function() {
   }
 })()
 
-var _visTimelineGraph2d = require('vis-timeline/dist/vis-timeline-graph2d.min')
+var _peer = require('vis-timeline/peer')
 
-var _visTimelineGraph2d2 = _interopRequireDefault(_visTimelineGraph2d)
+var _peer2 = _interopRequireDefault(_peer)
 
-require('vis-timeline/dist/vis-timeline-graph2d.min.css')
+require('vis-timeline/styles/vis-timeline-graph2d.min.css')
 
 var _react = require('react')
 
@@ -159,7 +159,7 @@ var Timeline = (function(_Component) {
 
         var container = this.refs.container
 
-        this.$el = new _visTimelineGraph2d2.default.Timeline(
+        this.$el = new _peer2.default.Timeline(
           container,
           undefined,
           this.props.options
@@ -236,7 +236,7 @@ var Timeline = (function(_Component) {
         this.$el.setOptions(timelineOptions)
 
         if (groups.length > 0) {
-          var groupsDataset = new _visTimelineGraph2d2.default.DataSet()
+          var groupsDataset = new _peer2.default.DataSet()
           groupsDataset.add(groups)
           this.$el.setGroups(groupsDataset)
         }
